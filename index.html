@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Popup box</title>
+	<link rel="stylesheet" type='text/css' href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<h2>История</h2><br>
+			<p>Компания основана в 1995 году в городе Москва, выпускниками МГУ Ивановым Иван Иванычем и Птровым Пертом Петровичем.
+				Первые шаги были самыми сложными, но мотивация была наивысшей. На 2022 год компания насчитывает 835 сотрудников а 15 городах России. 
+			</p>
+		</div>
+		<div class="toggleBtn"></div>
+	</div>
+
+	<script>
+		let toggleBtn = document.querySelector('.toggleBtn');
+		let container = document.querySelector('.container');
+		toggleBtn.onclick = function(){
+			container.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
